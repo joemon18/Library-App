@@ -1,0 +1,205 @@
+body {
+    background-color: #c2c5aa;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    transition:ease transform .3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#library {
+    gap: 10px;
+    width: 70vw;
+    height: 98vh;
+    margin-left: 20px;
+}
+
+#library h2 {
+    margin-left: 10px;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 65vw;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book {
+    border-radius: 8px;
+    width: 18vw;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-color: #a4ac86;
+}
+
+.book h4 {
+    font-size: larger;
+}
+
+.book h5 {
+    font-size: 100%;
+}
+
+
+#new-book {
+    margin-left: 20px;
+}
+
+#new-book h2 {
+    margin-left: 5px;
+}
+
+#add {
+    margin-right: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: #d4a373;
+    border: none;
+}
+
+#newbook {
+    display: grid;
+    gap: 10px;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.read {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.remove {
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(225, 29, 29);
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#addBook {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(11, 136, 239);
+    border: none;
+}
+
+@media(max-width:1370px) {
+    
+    .books {
+        justify-content: start;
+        width: 67vw;
+    }
+
+    #add {
+        width: 18vw;
+    }
+
+    #new-book {
+        margin-left: 100px;
+    }
+}
+
+@media(max-width:1154px) {
+    .books {
+        width: 55vw;
+    }
+
+    .book {
+        width: 22vw;
+    }
+
+
+    #add {
+        width: 25vw;
+    }
+
+    #new-book {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:1000px) {
+    #new-book {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width:920px) {
+
+    .books {
+        width: 40vw;
+    }
+
+    .book {
+        width: 35vw;
+    }
+
+    #add {
+        width: 30vw;
+    }
+
+    #new-book {
+        margin-left: 50px;
+        width: 37vw;
+    }
+}
+
+@media (max-width:795px) {
+
+    .container {
+        gap: 5px;
+        justify-content: start;
+    }
+    
+    #add {
+        width: 30vw;
+    }
+
+    #new-book {
+        margin-left: 10px;
+        width: 42vw;
+    }
+}
+
+
+@media (max-width:702px) {
+
+    .container {
+        gap: 5px;
+        justify-content: start;
+    }
+    
+    #add {
+        width: 35vw;
+        
+    }
+
+    #new-book {
+        margin-left: -40px;
+    }
+}
